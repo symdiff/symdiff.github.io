@@ -43,9 +43,14 @@ The recommended way of use is to integrate it in your build tool of choice and l
 
 ### Available plugins
 
-* symdiff-css
-* symdiff-html
-* symdiff-jade
-* symdiff-handlebars
+Choose one of these:
 
-Or write your own [plugin](/plugins/).
+* [symdiff-css](https://npmjs.org/package/symdiff-css)
+* [symdiff-sass](https://npmjs.org/package/symdiff-sass)
+* [symdiff-less](https://npmjs.org/package/symdiff-less)
+* [symdiff-stylus](https://npmjs.org/package/symdiff-stylus)
+* [symdiff-html](https://npmjs.org/package/symdiff-html)
+* [symdiff-jade](https://npmjs.org/package/symdiff-jade)
+* [symdiff-handlebars](https://npmjs.org/package/symdiff-handlebars)
+
+…or write your own [plugin](/plugins/).
