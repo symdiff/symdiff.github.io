@@ -10,7 +10,7 @@ permalink: /
 
 # symdiff
 
-Ever wondered if a bunch of style definitions in your project can be safely deleted? symdiff helps you with the decision in that it reports the symmetric difference (hence the name) of your classes used in CSS and in templates.
+Ever wondered if a bunch of style definitions in your project can be safely deleted? symdiff helps you with this decision: It reports the symmetric difference (hence the name) of your classes used in CSS and in templates.
 
 ### Example
 
@@ -47,8 +47,6 @@ Choose one of these:
 
 * [symdiff-css](https://npmjs.org/package/symdiff-css)
 * [symdiff-sass](https://npmjs.org/package/symdiff-sass)
-* [symdiff-less](https://npmjs.org/package/symdiff-less)
-* [symdiff-stylus](https://npmjs.org/package/symdiff-stylus)
 * [symdiff-html](https://npmjs.org/package/symdiff-html)
 * [symdiff-jade](https://npmjs.org/package/symdiff-jade)
 * [symdiff-handlebars](https://npmjs.org/package/symdiff-handlebars)
