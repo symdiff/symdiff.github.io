@@ -1,0 +1,61 @@
+h1 {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+}
+
+body {
+    background: $background-color;
+    color: $text-color;
+    margin: 0;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+a {
+    color: inherit;
+}
+
+.CodeRay {
+    line-height: 1;
+    .line-numbers {
+        margin-right: 1em;
+    }
+}
+
+.wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.site-header {
+    height: 50px;
+    background: $brand-color;
+    color: white;
+    margin: 0;
+    margin-bottom: 1em;
+
+    ul {
+        margin: 0;
+        list-style-type: none;
+        li {
+            float: left;
+            margin-left: 20px;
+        }
+    }
+}
