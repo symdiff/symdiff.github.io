@@ -10,7 +10,9 @@ Ever wondered if a bunch of style definitions in your project can be safely dele
 
 ### Example
 
-~~~ css
+This CSS:
+
+{% highlight css %}
 /* css */
 .home {
     color: red;
@@ -18,16 +20,20 @@ Ever wondered if a bunch of style definitions in your project can be safely dele
 .row {
     max-width: 760px;
 }
-~~~
+{% endhighlight %}
 
-~~~ html
+Together with this HTML:
+
+{% highlight html %}
 <!-- html -->
 <body>
     <div class="home">
         YO
     </div>
 </body>
-~~~
+{% endhighlight %}
+
+Results in this:
 
 ![Gulp](/img/gulp.png)
 

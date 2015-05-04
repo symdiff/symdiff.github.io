@@ -10,7 +10,7 @@ symdiff plugins are pure functions that transform a string into an array of stri
 
 Take for instance CSS, you could do it like this naively:
 
-~~~ js
+{% highlight javascript %}
 module.exports = 
     function symdiffCSS(cssString) {
         return cssString
@@ -21,7 +21,7 @@ module.exports =
                     return clazz.substring(1);
                 });
     }
-~~~
+{% endhighlight %}
 
 ### Error Handling
 

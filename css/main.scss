@@ -37,6 +37,13 @@ $h4-line-height: $h4-line * $h4-lines;
 $h4-margin-top: 1 * $h4-line;
 $h4-margin-bottom: 1 * $h4-line;
 
+$small-font-size: .75em;
+$small-line: 1.25em;
+$small-lines: 1;
+$small-line-height: $small-line * $small-lines;
+$small-margin-top: 1 * $small-line;
+$small-margin-bottom: 1 * $small-line;
+
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #333;
@@ -50,5 +57,6 @@ $brand-color:      #333;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "base",
-    "home"
+    "home",
+    "pygments"
 ;
