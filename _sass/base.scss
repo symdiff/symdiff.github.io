@@ -56,7 +56,7 @@ a {
     // safari has problems with currentColor, so we add a pseudo
     &:before {
         display: inline-block;
-        content: '\u00B6 ';
+        content: '\00B6 ';
     }
 }
 
