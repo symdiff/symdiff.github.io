@@ -52,6 +52,12 @@ a {
     &:hover {
         color: #bf4040;
     }
+
+    // safari has problems with currentColor, so we add a pseudo
+    &:before {
+        display: inline-block;
+        content: '\u00B6 ';
+    }
 }
 
 img {
