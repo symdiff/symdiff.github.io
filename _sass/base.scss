@@ -1,3 +1,28 @@
+body {
+    background: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+pre, code {
+    font-family: Monaco, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
 h1 {
     font-size: $h1-font-size;
     line-height: $h1-line-height;
@@ -18,21 +43,19 @@ h4 {
     line-height: $h4-line-height;
 }
 
-body {
-    background: $background-color;
-    color: $text-color;
-    margin: 0;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-}
-
 a {
+    @include transition(color);
     color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient( to top, rgba(0,0,0,0) 7%, currentColor 7%, currentColor 14%, rgba(0,0,0,0) 14%);
+
+    &:hover {
+        color: #bf4040;
+    }
 }
 
 .CodeRay {
-    line-height: 1;
+    line-height: 1.25;
     .line-numbers {
         margin-right: 1em;
     }
@@ -43,19 +66,35 @@ a {
     margin: 0 auto;
 }
 
-.site-header {
-    height: 50px;
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.site-footer {
     background: $brand-color;
     color: white;
+    padding: 1em;
+    margin-top: 3em;
+    height: 2em;
+}
+
+.site-header {
+    height: 2em;
+    background: $brand-color;
+    color: white;
+    padding: 1em;
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 
     ul {
         margin: 0;
         list-style-type: none;
         li {
             float: left;
-            margin-left: 20px;
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
         }
     }
 }

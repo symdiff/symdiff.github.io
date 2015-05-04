@@ -1,9 +1,41 @@
 .home {
-    div.logo {
+    h1 {
         text-align: center;
-        text-transform: uppercase;
-        img {
-            max-width: 320px;
+    }
+    .logo-wrapper {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .logo {
+        display: inline-flex;
+
+        &:hover {
+            .circle-left {
+                left: 100px;
+            }
+            .circle-right {
+                right: 100px;
+            }
+        }
+
+        .circle {
+            @include transition(left, right);
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            opacity: .8;
+            mix-blend-mode: difference;
+            background: #777;
+            position: relative;
+        }
+
+        .circle-left {
+            left: 30px;
+        }
+
+        .circle-right {
+            right: 30px;
         }
     }
 }
