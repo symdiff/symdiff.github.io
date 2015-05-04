@@ -6,15 +6,13 @@ permalink: /gulp-integration/
 
 First install the plugin itself:
 
-~~~
-npm install gulp-symdiff
-~~~
+    npm install gulp-symdiff
 
 Then install all the [plugins](/plugins/) you need.
 
 ### Usage
 
-~~~ js
+{% highlight javascript %}
 var symdiff = require('gulp-symdiff'),
     html = require('symdiff-html'),
     css = require('symdiff-css');
@@ -28,7 +26,7 @@ gulp
     .on('error', function() {
         process.exit(1);    // break the build
     }));
-~~~
+{% endhighlight %}
 
 ### FAQ
 
