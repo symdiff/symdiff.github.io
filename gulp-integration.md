@@ -28,6 +28,10 @@ gulp
     }));
 {% endhighlight %}
 
+### Example
+
+Look [here](https://github.com/symdiff/gulp-symdiff/blob/master/Gulpfile.js).
+
 ### FAQ
 
 Q: *How does gulp-symdiff decide whether it should run a file through the HTML plugin or the CSS plugin to extract the classes?*
