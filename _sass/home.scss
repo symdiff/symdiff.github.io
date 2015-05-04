@@ -7,6 +7,8 @@
         margin: 0 auto;
     }
     .logo {
+        display: -webkit-inline-flex; // for safari
+        display: -ms-inline-flex; // whatever
         display: inline-flex;
 
         &:hover {
