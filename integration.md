@@ -1,8 +1,15 @@
 ---
 layout: page
-title: "Gulp integration"
-permalink: /gulp-integration/
+title: "Integration"
+permalink: /integration/
 ---
+
+Jump to:
+
+* [Gulp](#gulp)
+* [Where the fuck is…](#where-the-fuck-is)
+
+## Gulp
 
 First install the plugin itself:
 
@@ -41,3 +48,9 @@ A: It doesn’t. Every file is piped through every plugin. Since a plugin should
 Q: *But won’t this lead to false positives, e.g. when using `.whatever` somewhere in the HTML?*
 
 A: Potentially it could, yes, but I suspect in reality it won’t because plugins should not use RegExps but parsers.
+
+## Where the fuck is…
+
+* [Grunt](http://gruntjs.com/)? Planned.
+* [Broccoli](https://github.com/broccolijs/broccoli)? Planned long term, if you're impatient please consider writing a plugin.
+* [Webpack](https://webpack.github.io/)? Planned, but I didn't check whether it's actually possible. Probably yes? Also: Hints and tips on how to test a webpack loader are greatly appreciated.

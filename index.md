@@ -39,9 +39,30 @@ Results in this:
 
 ### Usage
 
-The recommended way of use is to integrate it in your build tool of choice and let the build fail when the two sets of CSS and template classes are not equal. (See above.)
+The recommended way of use is to [integrate](/integration/) it in your build tool of choice and let the build fail when the two sets of CSS and template classes are not equal. (See above.)
 
-* [Gulp integration](/gulp-integration/)
+But if you have a different use case you can use symdiff also directly. It takes three arrays of strings as arguments:
+
+1. the classes used in CSS
+2. the classes used in templates
+3. classes to ignore
+
+It outputs an object with the fields `css` and `templates`. For instance:
+
+{% highlight js %}
+var symdiff = require('symdiff');
+
+var diff = symdiff(yourCssClasses, yourTemplateClasses, classesYouDoNotCareAbout);
+
+console.log(diff);
+// yields
+{
+    css: unusedCssClasses,
+    templates: unusedTemplateClasses
+}
+{% endhighlight %}
+
+If you're unsure you can also take a look at the various tests on [Github](https://github.com/symdiff).
 
 ### Available plugins
 
