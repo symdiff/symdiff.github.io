@@ -99,6 +99,13 @@ img {
     height: 32px;
 }
 
+.site-footer,
+.site-header {
+    .link {
+        margin-left: 1em;
+    }
+}
+
 .site-footer {
     background: $brand-color;
     color: white;
@@ -112,7 +119,4 @@ img {
     padding: 1em;
     margin: 0;
     margin-bottom: 3em;
-    .link {
-        margin-left: 1em;
-    }
 }
