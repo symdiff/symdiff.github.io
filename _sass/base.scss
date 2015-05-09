@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: $background-color;
     color: $text-color;
@@ -100,26 +104,15 @@ img {
     color: white;
     padding: 1em;
     margin-top: 3em;
-    height: 2em;
 }
 
 .site-header {
-    height: 2em;
     background: $brand-color;
     color: white;
     padding: 1em;
     margin: 0;
     margin-bottom: 3em;
-
-    ul {
-        margin: 0;
-        list-style-type: none;
-        li {
-            margin-top: 0;
-            float: left;
-            &:not(:first-child) {
-                margin-left: 20px;
-            }
-        }
+    .link {
+        margin-left: 1em;
     }
 }

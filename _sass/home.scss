@@ -3,41 +3,31 @@
         text-align: center;
     }
     .logo-wrapper {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
+        height: 200px;
         margin: 0 auto;
     }
     .logo {
-        display: -webkit-inline-flex; // for safari
-        display: -ms-inline-flex; // whatever
-        display: inline-flex;
-
-        &:hover {
-            .circle-left {
-                left: 100px;
-            }
-            .circle-right {
-                right: 100px;
-            }
-        }
 
         .circle {
-            @include transition(left, right);
-            display: inline-block;
+            will-change: transform;
+            transform:translate(0,0);
+            position: absolute;
             width: 200px;
             height: 200px;
             border-radius: 100%;
             opacity: .8;
             mix-blend-mode: difference;
             background: #777;
-            position: relative;
         }
 
         .circle-left {
-            left: 30px;
+            left: 50%;
         }
 
         .circle-right {
-            right: 30px;
+            right: 50%;
         }
     }
 }
