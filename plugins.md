@@ -20,7 +20,7 @@ permalink: /plugins/
 
 * [LESS](http://lesscss.org/)? The API of LESS is async and thus cannot be used from the synchronous symdiff API. Please compile it to CSS first and use symdiff-css.
 * [Stylus](https://learnboost.github.io/stylus/)? See LESS.
-* [Mustache](https://github.com/janl/mustache.js)? Planned, but there’s a decent chance that symdiff-handlebars already works.
+* [Mustache](https://github.com/janl/mustache.js)? Planned, but there’s a decent chance that symdiff-handlebars already works for you (it removes all curly brackets expressions and runs the result through symdiff-html).
 
 
 And the thing only you are using? Consider [writing a plugin](/write-a-plugin/).
