@@ -14,11 +14,8 @@ This CSS:
 
 {% highlight css %}
 /* css */
-.home {
-    color: red;
-}
-.row {
-    max-width: 760px;
+.container {
+    padding: 0;
 }
 {% endhighlight %}
 
@@ -27,7 +24,7 @@ Together with this HTML:
 {% highlight html %}
 <!-- html -->
 <body>
-    <div class="home">
+    <div class="row column">
         YO
     </div>
 </body>
@@ -35,7 +32,7 @@ Together with this HTML:
 
 Results in this:
 
-![Gulp](/img/gulp.png)
+![Gulp](/img/grunt-symdiff.png)
 
 ### Usage
 
