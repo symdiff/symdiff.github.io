@@ -13,6 +13,10 @@ Jump to:
 
 ## Gulp
 
+![gulp-symdiff](/img/gulp-symdiff.png)
+
+### Installation
+
 First install the plugin itself:
 
     npm install gulp-symdiff
@@ -43,6 +47,10 @@ gulp
 Look [here](https://github.com/symdiff/gulp-symdiff/blob/master/Gulpfile.js).
 
 ## Grunt
+
+![grunt-symdiff](/img/grunt-symdiff.png)
+
+### Installation
 
 First install the plugin itself:
 
