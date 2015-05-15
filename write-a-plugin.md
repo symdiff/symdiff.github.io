@@ -23,6 +23,8 @@ module.exports =
     }
 {% endhighlight %}
 
+…but please don’t and use a [parser](https://www.npmjs.com/search?q=parser) instead.
+
 ### Error Handling
 
 With a symdiff plugin there are no errors, semantically. Either it detects classes in a string or it doesn’t and it the latter case it should just return an empty array. (Even if the file is syntactically invalid.) Never should a plugin `throw`.
