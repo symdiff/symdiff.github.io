@@ -28,3 +28,22 @@ module.exports =
 ### Error Handling
 
 With a symdiff plugin there are no errors, semantically. Either it detects classes in a string or it doesn’t and it the latter case it should just return an empty array. (Even if the file is syntactically invalid.) Never should a plugin `throw`.
+
+### Warnings
+
+Put them in an array and attach it to the `_warnings` property of the array you return like this:
+
+{% highlight javascript %}
+module.exports = 
+    function symdiffCSS(cssString) {
+        var classes = [],
+            warnings = [];
+
+        // business logic here
+        warnings.push("ng-class not supported yet!");
+        // more business logic
+
+        classes._warnings = warnings;
+        return classes;
+    }
+{% endhighlight %}
