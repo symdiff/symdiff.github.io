@@ -6,7 +6,7 @@ permalink: /
 
 # symdiff
 
-Ever wondered if some your classes can be removed without breaking things? symdiff gives you the answer: It returns the [symmetric difference](http://en.wikipedia.org/wiki/Symmetric_difference) (hence the name) of your classes used in CSS and in templates.
+Ever wondered if some your classes can be removed without breaking things? symdiff gives you the answer: It returns the [symmetric difference](http://en.wikipedia.org/wiki/Symmetric_difference) (hence the name) of classes used in your styles and templates. This means a class must be in both of them or it will break your build (if you want to).
 
 ### Example
 
