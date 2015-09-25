@@ -6,7 +6,7 @@ permalink: /
 
 # symdiff
 
-Ever wondered if a bunch of style definitions in your project can be safely deleted? symdiff helps you with this decision: It reports the [symmetric difference](http://en.wikipedia.org/wiki/Symmetric_difference) (hence the name) of your classes used in CSS and in templates.
+Ever wondered if some your classes can be removed without breaking things? symdiff gives you the answer: It returns the [symmetric difference](http://en.wikipedia.org/wiki/Symmetric_difference) (hence the name) of your classes used in CSS and in templates.
 
 ### Example
 
