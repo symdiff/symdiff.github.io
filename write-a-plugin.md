@@ -31,7 +31,7 @@ With a symdiff plugin there are no errors, semantically. Either it detects class
 
 ### Warnings
 
-Put them in an array and attach it to the `_warnings` property of the array you return like this:
+Put them in an array and attach it to the `warnings` property of the array you return like this:
 
 {% highlight javascript %}
 module.exports = 
@@ -43,7 +43,7 @@ module.exports =
         warnings.push("ng-class not supported yet!");
         // more business logic
 
-        classes._warnings = warnings;
+        classes.warnings = warnings;
         return classes;
     }
 {% endhighlight %}
