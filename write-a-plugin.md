@@ -35,7 +35,7 @@ Put them in an array and attach it to the `warnings` property of the array you r
 
 {% highlight javascript %}
 module.exports = 
-    function symdiffCSS(cssString) {
+    function symdiffHTML(htmlString) {
         var classes = [],
             warnings = [];
 
